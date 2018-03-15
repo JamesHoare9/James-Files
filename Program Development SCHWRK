@@ -1,0 +1,38 @@
+User='MyTeach22'
+Pass='Salesian1'
+first='James'
+last='Hoare'
+Count=0
+Counts=0
+while True:         #This is to make a loop on the program when the incorrect password combination is entered
+
+    User2 = input('Please enter your username:')
+    Pass2 = input('What is the password?')
+
+    Count=Count+1
+
+    if Count==3:
+        print('Username and password combination incorrect. Please contact user administrator')
+        break
+    
+    else:
+        if User==User2 and Pass==Pass2:
+            print ('Access Granted')
+            
+            first2 = input('Please enter the students first name:')
+            last2 = input('Please enter the students last name:')
+
+    Counts=Counts+1
+
+    if Counts==3:
+        print('Name inputed is incorrect. Please contact user administrator')
+        break
+    else:
+        if first==first2 and last==last2:
+            print ('Test results are: Drama:100% Computing:100% PE:100% Business:100%')
+            break
+    else:
+            print ('Incorrect name inputed. Please contact administrator.')
+    else:
+            print ('Incorrect combination, please try again')
+
